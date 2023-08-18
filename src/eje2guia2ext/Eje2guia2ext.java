@@ -13,12 +13,20 @@ cambios.
  */
 package eje2guia2ext;
 
+import gui.PantallaPrincipal;
+
 
 public class Eje2guia2ext {
 
    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        PantallaPrincipal pantalla = new PantallaPrincipal();
+        
+        pantalla.setVisible(true);
+        pantalla.setLocationRelativeTo(null);
+        
+        
     }
     
 }
