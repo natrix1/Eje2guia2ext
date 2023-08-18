@@ -15,13 +15,13 @@ import javax.swing.DefaultListModel;
  */
 public class PantallaPrincipal extends javax.swing.JFrame {
 
-    public static HashMap<Integer, Contacto> contacto = new HashMap<>();
+    public static HashMap<String, Contacto> contacto = new HashMap<>();
     
-    DefaultListModel modelo = new DefaultListModel();
+    public  static DefaultListModel modelo = new DefaultListModel();
     
     public PantallaPrincipal() {
         initComponents();
-        
+        contactosPredeterminados();
     }
 
     
@@ -146,6 +146,12 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     private javax.swing.JList<String> jlListaContactos;
     // End of variables declaration//GEN-END:variables
     
+    private void contactosPredeterminados(){
     
+        modelo.addElement(contacto.put("260035055", new Contacto("Sergio", "Mendez", "jknhuj@kJhbk", "Monte Coman")));
+        modelo.addElement(contacto.put("260154855", new Contacto("Fracisco", "Zini", "vfhcfb@sbft", "Monte Hermoso")));
+        modelo.addElement(contacto.put("260154855", new Contacto("Danilo", "Garay", "jkdfshuj@khjgvjk", "Lujan")));
+        
+    }
     
 }

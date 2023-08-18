@@ -6,6 +6,7 @@
 package gui;
 
 import eje2guia2ext.Contacto;
+import static gui.PantallaPrincipal.modelo;
 
 /**
  *
@@ -47,6 +48,11 @@ public class NuevoContacto extends javax.swing.JInternalFrame {
         setClosable(true);
 
         jbGuardar.setText("Guardar");
+        jbGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbGuardarActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Nombre");
 
@@ -137,6 +143,12 @@ public class NuevoContacto extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jbGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbGuardarActionPerformed
+        
+        
+        
+    }//GEN-LAST:event_jbGuardarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
@@ -157,10 +169,10 @@ public class NuevoContacto extends javax.swing.JInternalFrame {
     
     private void cargarContacto(){
         
-        PantallaPrincipal.contacto.put(jtNTelefono.getText(),
-                 new Contacto(jtDireccion.getText(), jtNombre.getText(),
-                         jtApellido.getText(), jtMail.getText(), jtDireccion.getText()));
-    
+        PantallaPrincipal.contacto.put(jtNTelefono.getText(), new Contacto(jtNombre.getText(), jtApellido.getText(), jtMail.getText(), jtDireccion.getText()));
+        
+        
+        
     }
     
 }

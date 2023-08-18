@@ -17,14 +17,14 @@ public class Contacto {
     String correoElect;
     String direccion;
 
-    public Contacto(String nCel, String nombre, String apellido, String correoElect, String direccion) {
-        this.nCel = nCel;
+    public Contacto( String nombre, String apellido, String correoElect, String direccion) {
+        //this.nCel = nCel;
         this.nombre = nombre;
         this.apellido = apellido;
         this.correoElect = correoElect;
         this.direccion = direccion;
     }
-
+    /*
     public String getnCel() {
         return nCel;
     }
@@ -32,7 +32,7 @@ public class Contacto {
     public void setnCel(String nCel) {
         this.nCel = nCel;
     }
-
+    */
     public String getNombre() {
         return nombre;
     }
