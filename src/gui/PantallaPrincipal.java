@@ -7,6 +7,7 @@ package gui;
 
 import eje2guia2ext.Contacto;
 import java.util.HashMap;
+import javax.swing.DefaultListModel;
 
 /**
  *
@@ -14,7 +15,9 @@ import java.util.HashMap;
  */
 public class PantallaPrincipal extends javax.swing.JFrame {
 
-    HashMap<Integer, Contacto> contacto = new HashMap<>();
+    public static HashMap<Integer, Contacto> contacto = new HashMap<>();
+    
+    DefaultListModel modelo = new DefaultListModel();
     
     public PantallaPrincipal() {
         initComponents();
@@ -142,5 +145,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jbEliminar;
     private javax.swing.JList<String> jlListaContactos;
     // End of variables declaration//GEN-END:variables
-
+    
+    
+    
 }

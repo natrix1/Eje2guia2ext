@@ -5,6 +5,8 @@
  */
 package gui;
 
+import eje2guia2ext.Contacto;
+
 /**
  *
  * @author chexs
@@ -155,7 +157,9 @@ public class NuevoContacto extends javax.swing.JInternalFrame {
     
     private void cargarContacto(){
         
-        
+        PantallaPrincipal.contacto.put(jtNTelefono.getText(),
+                 new Contacto(jtDireccion.getText(), jtNombre.getText(),
+                         jtApellido.getText(), jtMail.getText(), jtDireccion.getText()));
     
     }
     

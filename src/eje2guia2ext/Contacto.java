@@ -11,23 +11,25 @@ package eje2guia2ext;
  */
 public class Contacto {
     
-    int nCel;
+    String nCel;
     String nombre;
     String apellido;
     String correoElect;
+    String direccion;
 
-    public Contacto(int nCel, String nombre, String apellido, String correoElect) {
+    public Contacto(String nCel, String nombre, String apellido, String correoElect, String direccion) {
         this.nCel = nCel;
         this.nombre = nombre;
         this.apellido = apellido;
         this.correoElect = correoElect;
+        this.direccion = direccion;
     }
 
-    public int getnCel() {
+    public String getnCel() {
         return nCel;
     }
 
-    public void setnCel(int nCel) {
+    public void setnCel(String nCel) {
         this.nCel = nCel;
     }
 
@@ -54,6 +56,15 @@ public class Contacto {
     public void setCorreoElect(String correoElect) {
         this.correoElect = correoElect;
     }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+    
     
     
     
